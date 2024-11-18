@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="603834b4d50e44e39e2f4d055af1d9db" Name="Diagram1">
+        <EntityTypeShape EntityType="BDArtesanalModel.Categoria" Width="1.5" PointX="0.75" PointY="8.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDArtesanalModel.Envio" Width="1.5" PointX="5.25" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDArtesanalModel.Pago" Width="1.5" PointX="8.25" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDArtesanalModel.Pedido" Width="1.5" PointX="3" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDArtesanalModel.PedidoDetalle" Width="1.5" PointX="5.25" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDArtesanalModel.Producto" Width="1.5" PointX="3" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDArtesanalModel.ProductoImagen" Width="1.5" PointX="5.25" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDArtesanalModel.sysdiagrams" Width="1.5" PointX="0.75" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDArtesanalModel.TipoDePago" Width="1.5" PointX="6" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDArtesanalModel.Usuario" Width="1.5" PointX="0.75" PointY="4.75" IsExpanded="true" />
+        <AssociationConnector Association="BDArtesanalModel.FK__Producto__Catego__3B75D760" ManuallyRouted="false" />
+        <AssociationConnector Association="BDArtesanalModel.FK__Envio__PedidoID__5629CD9C" ManuallyRouted="false" />
+        <AssociationConnector Association="BDArtesanalModel.FK__Pago__PedidoID__5165187F" ManuallyRouted="false" />
+        <AssociationConnector Association="BDArtesanalModel.FK__Pago__TipoPagoID__52593CB8" ManuallyRouted="false" />
+        <AssociationConnector Association="BDArtesanalModel.FK__Pedido__UsuarioI__440B1D61" ManuallyRouted="false" />
+        <AssociationConnector Association="BDArtesanalModel.FK__PedidoDet__Pedid__48CFD27E" ManuallyRouted="false" />
+        <AssociationConnector Association="BDArtesanalModel.FK__PedidoDet__Produ__49C3F6B7" ManuallyRouted="false" />
+        <AssociationConnector Association="BDArtesanalModel.FK__ProductoI__Produ__5AEE82B9" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

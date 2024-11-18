@@ -1,0 +1,260 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BDArtesanalModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Categoria">
+    <Key>
+      <PropertyRef Name="CategoriaID" />
+    </Key>
+    <Property Name="CategoriaID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Descripcion" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Producto" Relationship="Self.FK__Producto__Catego__3B75D760" FromRole="Categoria" ToRole="Producto" />
+  </EntityType>
+  <EntityType Name="Envio">
+    <Key>
+      <PropertyRef Name="EnvioID" />
+    </Key>
+    <Property Name="EnvioID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PedidoID" Type="Int32" />
+    <Property Name="DireccionEnvio" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="FechaEnvio" Type="DateTime" Precision="3" />
+    <Property Name="Estado" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="MetodoEnvio" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Pedido" Relationship="Self.FK__Envio__PedidoID__5629CD9C" FromRole="Envio" ToRole="Pedido" />
+  </EntityType>
+  <EntityType Name="Pago">
+    <Key>
+      <PropertyRef Name="PagoID" />
+    </Key>
+    <Property Name="PagoID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PedidoID" Type="Int32" />
+    <Property Name="Monto" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="FechaPago" Type="DateTime" Precision="3" />
+    <Property Name="MetodoPago" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Estado" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="TipoPagoID" Type="Int32" />
+    <NavigationProperty Name="Pedido" Relationship="Self.FK__Pago__PedidoID__5165187F" FromRole="Pago" ToRole="Pedido" />
+    <NavigationProperty Name="TipoDePago" Relationship="Self.FK__Pago__TipoPagoID__52593CB8" FromRole="Pago" ToRole="TipoDePago" />
+  </EntityType>
+  <EntityType Name="Pedido">
+    <Key>
+      <PropertyRef Name="PedidoID" />
+    </Key>
+    <Property Name="PedidoID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UsuarioID" Type="Int32" />
+    <Property Name="FechaPedido" Type="DateTime" Precision="3" />
+    <Property Name="Estado" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Total" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
+    <NavigationProperty Name="Envio" Relationship="Self.FK__Envio__PedidoID__5629CD9C" FromRole="Pedido" ToRole="Envio" />
+    <NavigationProperty Name="Pago" Relationship="Self.FK__Pago__PedidoID__5165187F" FromRole="Pedido" ToRole="Pago" />
+    <NavigationProperty Name="Usuario" Relationship="Self.FK__Pedido__UsuarioI__440B1D61" FromRole="Pedido" ToRole="Usuario" />
+    <NavigationProperty Name="PedidoDetalle" Relationship="Self.FK__PedidoDet__Pedid__48CFD27E" FromRole="Pedido" ToRole="PedidoDetalle" />
+  </EntityType>
+  <EntityType Name="PedidoDetalle">
+    <Key>
+      <PropertyRef Name="PedidoDetalleID" />
+    </Key>
+    <Property Name="PedidoDetalleID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PedidoID" Type="Int32" />
+    <Property Name="ProductoID" Type="Int32" />
+    <Property Name="Cantidad" Type="Int32" Nullable="false" />
+    <Property Name="PrecioUnitario" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
+    <NavigationProperty Name="Pedido" Relationship="Self.FK__PedidoDet__Pedid__48CFD27E" FromRole="PedidoDetalle" ToRole="Pedido" />
+    <NavigationProperty Name="Producto" Relationship="Self.FK__PedidoDet__Produ__49C3F6B7" FromRole="PedidoDetalle" ToRole="Producto" />
+  </EntityType>
+  <EntityType Name="Producto">
+    <Key>
+      <PropertyRef Name="ProductoID" />
+    </Key>
+    <Property Name="ProductoID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Descripcion" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Precio" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="Stock" Type="Int32" Nullable="false" />
+    <Property Name="CategoriaID" Type="Int32" />
+    <NavigationProperty Name="Categoria" Relationship="Self.FK__Producto__Catego__3B75D760" FromRole="Producto" ToRole="Categoria" />
+    <NavigationProperty Name="PedidoDetalle" Relationship="Self.FK__PedidoDet__Produ__49C3F6B7" FromRole="Producto" ToRole="PedidoDetalle" />
+    <NavigationProperty Name="ProductoImagen" Relationship="Self.FK__ProductoI__Produ__5AEE82B9" FromRole="Producto" ToRole="ProductoImagen" />
+  </EntityType>
+  <EntityType Name="ProductoImagen">
+    <Key>
+      <PropertyRef Name="ImagenID" />
+    </Key>
+    <Property Name="ImagenID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProductoID" Type="Int32" />
+    <Property Name="URLImagen" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="EsPortada" Type="Boolean" Nullable="false" />
+    <Property Name="FechaCreacion" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Producto" Relationship="Self.FK__ProductoI__Produ__5AEE82B9" FromRole="ProductoImagen" ToRole="Producto" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="TipoDePago">
+    <Key>
+      <PropertyRef Name="TipoPagoID" />
+    </Key>
+    <Property Name="TipoPagoID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Tipo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Descripcion" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Pago" Relationship="Self.FK__Pago__TipoPagoID__52593CB8" FromRole="TipoDePago" ToRole="Pago" />
+  </EntityType>
+  <EntityType Name="Usuario">
+    <Key>
+      <PropertyRef Name="UsuarioID" />
+    </Key>
+    <Property Name="UsuarioID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Correo" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Contrasenia" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Direccion" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Telefono" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Pedido" Relationship="Self.FK__Pedido__UsuarioI__440B1D61" FromRole="Usuario" ToRole="Pedido" />
+  </EntityType>
+  <Association Name="FK__Producto__Catego__3B75D760">
+    <End Role="Categoria" Type="Self.Categoria" Multiplicity="0..1" />
+    <End Role="Producto" Type="Self.Producto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Categoria">
+        <PropertyRef Name="CategoriaID" />
+      </Principal>
+      <Dependent Role="Producto">
+        <PropertyRef Name="CategoriaID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Envio__PedidoID__5629CD9C">
+    <End Role="Pedido" Type="Self.Pedido" Multiplicity="0..1" />
+    <End Role="Envio" Type="Self.Envio" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Pedido">
+        <PropertyRef Name="PedidoID" />
+      </Principal>
+      <Dependent Role="Envio">
+        <PropertyRef Name="PedidoID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Pago__PedidoID__5165187F">
+    <End Role="Pedido" Type="Self.Pedido" Multiplicity="0..1" />
+    <End Role="Pago" Type="Self.Pago" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Pedido">
+        <PropertyRef Name="PedidoID" />
+      </Principal>
+      <Dependent Role="Pago">
+        <PropertyRef Name="PedidoID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Pago__TipoPagoID__52593CB8">
+    <End Role="TipoDePago" Type="Self.TipoDePago" Multiplicity="0..1" />
+    <End Role="Pago" Type="Self.Pago" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TipoDePago">
+        <PropertyRef Name="TipoPagoID" />
+      </Principal>
+      <Dependent Role="Pago">
+        <PropertyRef Name="TipoPagoID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Pedido__UsuarioI__440B1D61">
+    <End Role="Usuario" Type="Self.Usuario" Multiplicity="0..1" />
+    <End Role="Pedido" Type="Self.Pedido" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuario">
+        <PropertyRef Name="UsuarioID" />
+      </Principal>
+      <Dependent Role="Pedido">
+        <PropertyRef Name="UsuarioID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PedidoDet__Pedid__48CFD27E">
+    <End Role="Pedido" Type="Self.Pedido" Multiplicity="0..1" />
+    <End Role="PedidoDetalle" Type="Self.PedidoDetalle" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Pedido">
+        <PropertyRef Name="PedidoID" />
+      </Principal>
+      <Dependent Role="PedidoDetalle">
+        <PropertyRef Name="PedidoID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PedidoDet__Produ__49C3F6B7">
+    <End Role="Producto" Type="Self.Producto" Multiplicity="0..1" />
+    <End Role="PedidoDetalle" Type="Self.PedidoDetalle" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Producto">
+        <PropertyRef Name="ProductoID" />
+      </Principal>
+      <Dependent Role="PedidoDetalle">
+        <PropertyRef Name="ProductoID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ProductoI__Produ__5AEE82B9">
+    <End Role="Producto" Type="Self.Producto" Multiplicity="0..1" />
+    <End Role="ProductoImagen" Type="Self.ProductoImagen" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Producto">
+        <PropertyRef Name="ProductoID" />
+      </Principal>
+      <Dependent Role="ProductoImagen">
+        <PropertyRef Name="ProductoID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="BDArtesanalEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Categoria" EntityType="Self.Categoria" />
+    <EntitySet Name="Envio" EntityType="Self.Envio" />
+    <EntitySet Name="Pago" EntityType="Self.Pago" />
+    <EntitySet Name="Pedido" EntityType="Self.Pedido" />
+    <EntitySet Name="PedidoDetalle" EntityType="Self.PedidoDetalle" />
+    <EntitySet Name="Producto" EntityType="Self.Producto" />
+    <EntitySet Name="ProductoImagen" EntityType="Self.ProductoImagen" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+    <EntitySet Name="TipoDePago" EntityType="Self.TipoDePago" />
+    <EntitySet Name="Usuario" EntityType="Self.Usuario" />
+    <AssociationSet Name="FK__Producto__Catego__3B75D760" Association="Self.FK__Producto__Catego__3B75D760">
+      <End Role="Categoria" EntitySet="Categoria" />
+      <End Role="Producto" EntitySet="Producto" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Envio__PedidoID__5629CD9C" Association="Self.FK__Envio__PedidoID__5629CD9C">
+      <End Role="Pedido" EntitySet="Pedido" />
+      <End Role="Envio" EntitySet="Envio" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Pago__PedidoID__5165187F" Association="Self.FK__Pago__PedidoID__5165187F">
+      <End Role="Pedido" EntitySet="Pedido" />
+      <End Role="Pago" EntitySet="Pago" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Pago__TipoPagoID__52593CB8" Association="Self.FK__Pago__TipoPagoID__52593CB8">
+      <End Role="TipoDePago" EntitySet="TipoDePago" />
+      <End Role="Pago" EntitySet="Pago" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Pedido__UsuarioI__440B1D61" Association="Self.FK__Pedido__UsuarioI__440B1D61">
+      <End Role="Usuario" EntitySet="Usuario" />
+      <End Role="Pedido" EntitySet="Pedido" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PedidoDet__Pedid__48CFD27E" Association="Self.FK__PedidoDet__Pedid__48CFD27E">
+      <End Role="Pedido" EntitySet="Pedido" />
+      <End Role="PedidoDetalle" EntitySet="PedidoDetalle" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PedidoDet__Produ__49C3F6B7" Association="Self.FK__PedidoDet__Produ__49C3F6B7">
+      <End Role="Producto" EntitySet="Producto" />
+      <End Role="PedidoDetalle" EntitySet="PedidoDetalle" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ProductoI__Produ__5AEE82B9" Association="Self.FK__ProductoI__Produ__5AEE82B9">
+      <End Role="Producto" EntitySet="Producto" />
+      <End Role="ProductoImagen" EntitySet="ProductoImagen" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
