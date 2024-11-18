@@ -1,18 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\bilro\\source\\repos\\ArtesaniasWeb\\",
+  "WorkspaceRootPath": "D:\\ESTUDIOS\\Universidad Continental\\8vo ciclo\\CONSTRUCCI\u00D3N DE SOFTWARE\\E_COMERCE_ARTESANAL\\GIT_ARTESANAL\\Proyecto_ECommerce\\ArtesaniasWeb\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D4518D3B-5D37-48BA-8D2F-8CEFA3760CBB}|ArtesaniasWeb\\ArtesaniasWeb.csproj|c:\\users\\bilro\\source\\repos\\artesaniasweb\\artesaniasweb\\consulta.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D4518D3B-5D37-48BA-8D2F-8CEFA3760CBB}|ArtesaniasWeb\\ArtesaniasWeb.csproj|solutionrelative:artesaniasweb\\consulta.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D4518D3B-5D37-48BA-8D2F-8CEFA3760CBB}|ArtesaniasWeb\\ArtesaniasWeb.csproj|C:\\Users\\bilro\\source\\repos\\ArtesaniasWeb\\artesaniasweb\\consulta.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{D4518D3B-5D37-48BA-8D2F-8CEFA3760CBB}|ArtesaniasWeb\\ArtesaniasWeb.csproj|D:\\ESTUDIOS\\Universidad Continental\\8vo ciclo\\CONSTRUCCI\u00D3N DE SOFTWARE\\E_COMERCE_ARTESANAL\\GIT_ARTESANAL\\Proyecto_ECommerce\\ArtesaniasWeb\\artesaniasweb\\consulta.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{D4518D3B-5D37-48BA-8D2F-8CEFA3760CBB}|ArtesaniasWeb\\ArtesaniasWeb.csproj|solutionrelative:artesaniasweb\\consulta.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D4518D3B-5D37-48BA-8D2F-8CEFA3760CBB}|ArtesaniasWeb\\ArtesaniasWeb.csproj|C:\\Users\\bilro\\source\\repos\\ArtesaniasWeb\\artesaniasweb\\modelobfartesanias.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
-      "RelativeMoniker": "D:0:0:{D4518D3B-5D37-48BA-8D2F-8CEFA3760CBB}|ArtesaniasWeb\\ArtesaniasWeb.csproj|solutionrelative:artesaniasweb\\modelobfartesanias.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
+      "AbsoluteMoniker": "D:0:0:{D4518D3B-5D37-48BA-8D2F-8CEFA3760CBB}|ArtesaniasWeb\\ArtesaniasWeb.csproj|d:\\estudios\\universidad continental\\8vo ciclo\\construcci\u00F3n de software\\e_comerce_artesanal\\git_artesanal\\proyecto_ecommerce\\artesaniasweb\\artesaniasweb\\consulta.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4518D3B-5D37-48BA-8D2F-8CEFA3760CBB}|ArtesaniasWeb\\ArtesaniasWeb.csproj|solutionrelative:artesaniasweb\\consulta.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,39 +26,29 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "consulta.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\bilro\\source\\repos\\ArtesaniasWeb\\ArtesaniasWeb\\consulta.aspx.cs",
+              "DocumentMoniker": "D:\\ESTUDIOS\\Universidad Continental\\8vo ciclo\\CONSTRUCCI\u00D3N DE SOFTWARE\\E_COMERCE_ARTESANAL\\GIT_ARTESANAL\\Proyecto_ECommerce\\ArtesaniasWeb\\ArtesaniasWeb\\consulta.aspx.cs",
               "RelativeDocumentMoniker": "ArtesaniasWeb\\consulta.aspx.cs",
-              "ToolTip": "C:\\Users\\bilro\\source\\repos\\ArtesaniasWeb\\ArtesaniasWeb\\consulta.aspx.cs",
+              "ToolTip": "D:\\ESTUDIOS\\Universidad Continental\\8vo ciclo\\CONSTRUCCI\u00D3N DE SOFTWARE\\E_COMERCE_ARTESANAL\\GIT_ARTESANAL\\Proyecto_ECommerce\\ArtesaniasWeb\\ArtesaniasWeb\\consulta.aspx.cs",
               "RelativeToolTip": "ArtesaniasWeb\\consulta.aspx.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAABYAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-18T05:42:12.702Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "consulta.aspx",
-              "DocumentMoniker": "C:\\Users\\bilro\\source\\repos\\ArtesaniasWeb\\ArtesaniasWeb\\consulta.aspx",
+              "DocumentMoniker": "D:\\ESTUDIOS\\Universidad Continental\\8vo ciclo\\CONSTRUCCI\u00D3N DE SOFTWARE\\E_COMERCE_ARTESANAL\\GIT_ARTESANAL\\Proyecto_ECommerce\\ArtesaniasWeb\\ArtesaniasWeb\\consulta.aspx",
               "RelativeDocumentMoniker": "ArtesaniasWeb\\consulta.aspx",
-              "ToolTip": "C:\\Users\\bilro\\source\\repos\\ArtesaniasWeb\\ArtesaniasWeb\\consulta.aspx",
+              "ToolTip": "D:\\ESTUDIOS\\Universidad Continental\\8vo ciclo\\CONSTRUCCI\u00D3N DE SOFTWARE\\E_COMERCE_ARTESANAL\\GIT_ARTESANAL\\Proyecto_ECommerce\\ArtesaniasWeb\\ArtesaniasWeb\\consulta.aspx",
               "RelativeToolTip": "ArtesaniasWeb\\consulta.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-11-18T05:38:50.545Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ModeloBFArtesanias.edmx [Diagram1]",
-              "DocumentMoniker": "C:\\Users\\bilro\\source\\repos\\ArtesaniasWeb\\ArtesaniasWeb\\ModeloBFArtesanias.edmx",
-              "RelativeDocumentMoniker": "ArtesaniasWeb\\ModeloBFArtesanias.edmx",
-              "ToolTip": "C:\\Users\\bilro\\source\\repos\\ArtesaniasWeb\\ArtesaniasWeb\\ModeloBFArtesanias.edmx [Diagram1]",
-              "RelativeToolTip": "ArtesaniasWeb\\ModeloBFArtesanias.edmx [Diagram1]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
-              "WhenOpened": "2024-11-18T05:51:52.766Z"
+              "WhenOpened": "2024-11-18T05:38:50.545Z",
+              "EditorCaption": ""
             }
           ]
         }

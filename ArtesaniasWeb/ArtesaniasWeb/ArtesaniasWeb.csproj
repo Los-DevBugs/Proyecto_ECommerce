@@ -76,6 +76,55 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="consulta.aspx" />
+    <Content Include="Imagenes\C-Alfareria_Andina.jpg" />
+    <Content Include="Imagenes\C-Cuenca_Inca.jpeg" />
+    <Content Include="Imagenes\C-Jarron.jpg" />
+    <Content Include="Imagenes\C-Jarron_Andes.jpg" />
+    <Content Include="Imagenes\C-Jarron_Rojo.jpg" />
+    <Content Include="Imagenes\C-Olla_Tradicional.jpg" />
+    <Content Include="Imagenes\C-Plato.jpg" />
+    <Content Include="Imagenes\C-Plato_Tierra.jpg" />
+    <Content Include="Imagenes\C-Taza_Inca.jpeg" />
+    <Content Include="Imagenes\C-Vasija_Decorativax.jpg" />
+    <Content Include="Imagenes\C-Vasija_Inca.jpeg" />
+    <Content Include="Imagenes\C-Vaso_Decorado.jpg" />
+    <Content Include="Imagenes\J-Anillo_Inca.jpeg" />
+    <Content Include="Imagenes\J-Anillo_Oro.jpeg" />
+    <Content Include="Imagenes\J-Anillo_Plata.jpg" />
+    <Content Include="Imagenes\J-Collar_Andino.jpg" />
+    <Content Include="Imagenes\J-Collar_Coral.jpg" />
+    <Content Include="Imagenes\J-Collar_Jade.jpg" />
+    <Content Include="Imagenes\J-Collar_Plata.jpg" />
+    <Content Include="Imagenes\J-Pendiente_Plata.jpg" />
+    <Content Include="Imagenes\J-Pulcera_Inca.jpg" />
+    <Content Include="Imagenes\J-Pulcera_Plata.jpeg" />
+    <Content Include="Imagenes\J-Pulsera_Andina.jpg" />
+    <Content Include="Imagenes\J-Pulsera_Oro.jpg" />
+    <Content Include="Imagenes\Jarrones.jpg" />
+    <Content Include="Imagenes\T-Bufanda_Alpaca.jpg" />
+    <Content Include="Imagenes\T-Bufanda_Inca.jpg" />
+    <Content Include="Imagenes\T-Bufanda_Llama.jpg" />
+    <Content Include="Imagenes\T-Chaleco_Lana.jpg" />
+    <Content Include="Imagenes\T-Chal_Alpaca.jpg" />
+    <Content Include="Imagenes\T-Chullo_Alpaca.jpg" />
+    <Content Include="Imagenes\T-Gorro_Alpaca.jpeg" />
+    <Content Include="Imagenes\T-Jersey_Alpaca.jpg" />
+    <Content Include="Imagenes\T-Poncho.jpg" />
+    <Content Include="Imagenes\T-Poncho_Lana.jpeg" />
+    <Content Include="Imagenes\T-Tejido_Inca.jpg" />
+    <Content Include="Imagenes\T-Tejido_Llama.jpg" />
+    <Content Include="Imagenes\TA-Condorx.jpg" />
+    <Content Include="Imagenes\TA-Escultura.jpg" />
+    <Content Include="Imagenes\TA-Escultura_Andina.jpg" />
+    <Content Include="Imagenes\TA-Escultura_Madera_Oscura.jpeg" />
+    <Content Include="Imagenes\TA-Escultura_Piedra.jpg" />
+    <Content Include="Imagenes\TA-EstatuaInca.jpg" />
+    <Content Include="Imagenes\TA-Estatua_Guerrero.jpg" />
+    <Content Include="Imagenes\TA-Figura_Llama.jpg" />
+    <Content Include="Imagenes\TA-Mascara.jpeg" />
+    <Content Include="Imagenes\TA-Mascara_Ceremonial.jpeg" />
+    <Content Include="Imagenes\TA-Mascara_Guerrero.jpg" />
+    <Content Include="Imagenes\TA-Mascara_Selva.jpeg" />
     <Content Include="ModeloBFArtesanias.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>ModeloBFArtesanias.Context.cs</LastGenOutput>
@@ -162,6 +211,7 @@
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

@@ -61,3 +61,5 @@ C:\Users\bilro\source\repos\ArtesaniasWeb\ArtesaniasWeb\bin\EntityFramework.dll
 C:\Users\bilro\source\repos\ArtesaniasWeb\ArtesaniasWeb\bin\EntityFramework.SqlServer.dll
 C:\Users\bilro\source\repos\ArtesaniasWeb\ArtesaniasWeb\bin\EntityFramework.xml
 C:\Users\bilro\source\repos\ArtesaniasWeb\ArtesaniasWeb\bin\EntityFramework.SqlServer.xml
+D:\ESTUDIOS\Universidad Continental\8vo ciclo\CONSTRUCCIÓN DE SOFTWARE\E_COMERCE_ARTESANAL\GIT_ARTESANAL\Proyecto_ECommerce\ArtesaniasWeb\ArtesaniasWeb\obj\Debug\ArtesaniasWeb.dll
+D:\ESTUDIOS\Universidad Continental\8vo ciclo\CONSTRUCCIÓN DE SOFTWARE\E_COMERCE_ARTESANAL\GIT_ARTESANAL\Proyecto_ECommerce\ArtesaniasWeb\ArtesaniasWeb\obj\Debug\ArtesaniasWeb.pdb
