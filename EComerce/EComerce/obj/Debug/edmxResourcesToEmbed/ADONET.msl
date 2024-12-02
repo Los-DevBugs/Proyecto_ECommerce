@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BDEComerceModelStoreContainer" CdmEntityContainer="BDEComerceEntities">
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="BDEComerceModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TCarrito">
+      <EntityTypeMapping TypeName="BDEComerceModel.TCarrito">
+        <MappingFragment StoreEntitySet="TCarrito">
+          <ScalarProperty Name="CarId" ColumnName="CarId" />
+          <ScalarProperty Name="PId" ColumnName="PId" />
+          <ScalarProperty Name="CarCantidad" ColumnName="CarCantidad" />
+          <ScalarProperty Name="UId" ColumnName="UId" />
+          <ScalarProperty Name="CarFCreacion" ColumnName="CarFCreacion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TCategoria">
+      <EntityTypeMapping TypeName="BDEComerceModel.TCategoria">
+        <MappingFragment StoreEntitySet="TCategoria">
+          <ScalarProperty Name="CId" ColumnName="CId" />
+          <ScalarProperty Name="CNombre" ColumnName="CNombre" />
+          <ScalarProperty Name="CImagen" ColumnName="CImagen" />
+          <ScalarProperty Name="CEstado" ColumnName="CEstado" />
+          <ScalarProperty Name="CFCreacion" ColumnName="CFCreacion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TContacto">
+      <EntityTypeMapping TypeName="BDEComerceModel.TContacto">
+        <MappingFragment StoreEntitySet="TContacto">
+          <ScalarProperty Name="CtId" ColumnName="CtId" />
+          <ScalarProperty Name="CtNombre" ColumnName="CtNombre" />
+          <ScalarProperty Name="CtEmail" ColumnName="CtEmail" />
+          <ScalarProperty Name="CtAsunto" ColumnName="CtAsunto" />
+          <ScalarProperty Name="CtMensaje" ColumnName="CtMensaje" />
+          <ScalarProperty Name="CtFCreacion" ColumnName="CtFCreacion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TImagenProducto">
+      <EntityTypeMapping TypeName="BDEComerceModel.TImagenProducto">
+        <MappingFragment StoreEntitySet="TImagenProducto">
+          <ScalarProperty Name="IPId" ColumnName="IPId" />
+          <ScalarProperty Name="IPUrl" ColumnName="IPUrl" />
+          <ScalarProperty Name="PId" ColumnName="PId" />
+          <ScalarProperty Name="IPPredeterminado" ColumnName="IPPredeterminado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TListaDeseos">
+      <EntityTypeMapping TypeName="BDEComerceModel.TListaDeseos">
+        <MappingFragment StoreEntitySet="TListaDeseos">
+          <ScalarProperty Name="LDId" ColumnName="LDId" />
+          <ScalarProperty Name="PId" ColumnName="PId" />
+          <ScalarProperty Name="UId" ColumnName="UId" />
+          <ScalarProperty Name="LDFCreacion" ColumnName="LDFCreacion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TPago">
+      <EntityTypeMapping TypeName="BDEComerceModel.TPago">
+        <MappingFragment StoreEntitySet="TPago">
+          <ScalarProperty Name="PagId" ColumnName="PagId" />
+          <ScalarProperty Name="PagNombre" ColumnName="PagNombre" />
+          <ScalarProperty Name="PagNoTarjeta" ColumnName="PagNoTarjeta" />
+          <ScalarProperty Name="PagFvencimiento" ColumnName="PagFvencimiento" />
+          <ScalarProperty Name="PagCvvNo" ColumnName="PagCvvNo" />
+          <ScalarProperty Name="PagEmail" ColumnName="PagEmail" />
+          <ScalarProperty Name="PagTipo" ColumnName="PagTipo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TPedido">
+      <EntityTypeMapping TypeName="BDEComerceModel.TPedido">
+        <MappingFragment StoreEntitySet="TPedido">
+          <ScalarProperty Name="PedDetalleId" ColumnName="PedDetalleId" />
+          <ScalarProperty Name="PedNumero" ColumnName="PedNumero" />
+          <ScalarProperty Name="PId" ColumnName="PId" />
+          <ScalarProperty Name="PedCantidad" ColumnName="PedCantidad" />
+          <ScalarProperty Name="UId" ColumnName="UId" />
+          <ScalarProperty Name="PedEstado" ColumnName="PedEstado" />
+          <ScalarProperty Name="PagId" ColumnName="PagId" />
+          <ScalarProperty Name="PedFecha" ColumnName="PedFecha" />
+          <ScalarProperty Name="PedCancelado" ColumnName="PedCancelado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TProducto">
+      <EntityTypeMapping TypeName="BDEComerceModel.TProducto">
+        <MappingFragment StoreEntitySet="TProducto">
+          <ScalarProperty Name="PId" ColumnName="PId" />
+          <ScalarProperty Name="PNombre" ColumnName="PNombre" />
+          <ScalarProperty Name="PDesctipcionCorta" ColumnName="PDesctipcionCorta" />
+          <ScalarProperty Name="PDesctipcionLarga" ColumnName="PDesctipcionLarga" />
+          <ScalarProperty Name="PDescripcionAdicional" ColumnName="PDescripcionAdicional" />
+          <ScalarProperty Name="PPprecio" ColumnName="PPprecio" />
+          <ScalarProperty Name="PCantidad" ColumnName="PCantidad" />
+          <ScalarProperty Name="PTamanio" ColumnName="PTamanio" />
+          <ScalarProperty Name="PColor" ColumnName="PColor" />
+          <ScalarProperty Name="PCompaniaNombre" ColumnName="PCompaniaNombre" />
+          <ScalarProperty Name="CId" ColumnName="CId" />
+          <ScalarProperty Name="SCId" ColumnName="SCId" />
+          <ScalarProperty Name="PVendido" ColumnName="PVendido" />
+          <ScalarProperty Name="PPersonalizado" ColumnName="PPersonalizado" />
+          <ScalarProperty Name="PActivo" ColumnName="PActivo" />
+          <ScalarProperty Name="PFCreacion" ColumnName="PFCreacion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TReseniaProducto">
+      <EntityTypeMapping TypeName="BDEComerceModel.TReseniaProducto">
+        <MappingFragment StoreEntitySet="TReseniaProducto">
+          <ScalarProperty Name="RPId" ColumnName="RPId" />
+          <ScalarProperty Name="REstrellas" ColumnName="REstrellas" />
+          <ScalarProperty Name="RComentarios" ColumnName="RComentarios" />
+          <ScalarProperty Name="PId" ColumnName="PId" />
+          <ScalarProperty Name="UId" ColumnName="UId" />
+          <ScalarProperty Name="RPFCreacion" ColumnName="RPFCreacion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TRoles">
+      <EntityTypeMapping TypeName="BDEComerceModel.TRoles">
+        <MappingFragment StoreEntitySet="TRoles">
+          <ScalarProperty Name="RId" ColumnName="RId" />
+          <ScalarProperty Name="RNombre" ColumnName="RNombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TSubCategoria">
+      <EntityTypeMapping TypeName="BDEComerceModel.TSubCategoria">
+        <MappingFragment StoreEntitySet="TSubCategoria">
+          <ScalarProperty Name="SCId" ColumnName="SCId" />
+          <ScalarProperty Name="SCNombre" ColumnName="SCNombre" />
+          <ScalarProperty Name="CId" ColumnName="CId" />
+          <ScalarProperty Name="SCEstado" ColumnName="SCEstado" />
+          <ScalarProperty Name="SCFCreacion" ColumnName="SCFCreacion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TUsuario">
+      <EntityTypeMapping TypeName="BDEComerceModel.TUsuario">
+        <MappingFragment StoreEntitySet="TUsuario">
+          <ScalarProperty Name="UId" ColumnName="UId" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="UNombre" ColumnName="UNombre" />
+          <ScalarProperty Name="UCelular" ColumnName="UCelular" />
+          <ScalarProperty Name="UEmail" ColumnName="UEmail" />
+          <ScalarProperty Name="UDireccion" ColumnName="UDireccion" />
+          <ScalarProperty Name="UContrasenia" ColumnName="UContrasenia" />
+          <ScalarProperty Name="UImagenUrl" ColumnName="UImagenUrl" />
+          <ScalarProperty Name="RId" ColumnName="RId" />
+          <ScalarProperty Name="UFCreacion" ColumnName="UFCreacion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

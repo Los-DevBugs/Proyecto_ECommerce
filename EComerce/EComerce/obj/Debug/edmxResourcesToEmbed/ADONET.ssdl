@@ -1,0 +1,417 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BDEComerceModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="TCarrito">
+    <Key>
+      <PropertyRef Name="CarId" />
+    </Key>
+    <Property Name="CarId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PId" Type="int" Nullable="false" />
+    <Property Name="CarCantidad" Type="int" />
+    <Property Name="UId" Type="int" Nullable="false" />
+    <Property Name="CarFCreacion" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TCategoria">
+    <Key>
+      <PropertyRef Name="CId" />
+    </Key>
+    <Property Name="CId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CNombre" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="CImagen" Type="varchar(max)" Nullable="false" />
+    <Property Name="CEstado" Type="bit" Nullable="false" />
+    <Property Name="CFCreacion" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TContacto">
+    <Key>
+      <PropertyRef Name="CtId" />
+    </Key>
+    <Property Name="CtId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CtNombre" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="CtEmail" Type="varchar" MaxLength="50" />
+    <Property Name="CtAsunto" Type="varchar" MaxLength="200" />
+    <Property Name="CtMensaje" Type="varchar(max)" />
+    <Property Name="CtFCreacion" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TImagenProducto">
+    <Key>
+      <PropertyRef Name="IPId" />
+    </Key>
+    <Property Name="IPId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IPUrl" Type="varchar(max)" />
+    <Property Name="PId" Type="int" Nullable="false" />
+    <Property Name="IPPredeterminado" Type="bit" />
+  </EntityType>
+  <EntityType Name="TListaDeseos">
+    <Key>
+      <PropertyRef Name="LDId" />
+    </Key>
+    <Property Name="LDId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PId" Type="int" Nullable="false" />
+    <Property Name="UId" Type="int" Nullable="false" />
+    <Property Name="LDFCreacion" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TPago">
+    <Key>
+      <PropertyRef Name="PagId" />
+    </Key>
+    <Property Name="PagId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PagNombre" Type="varchar" MaxLength="50" />
+    <Property Name="PagNoTarjeta" Type="varchar" MaxLength="50" />
+    <Property Name="PagFvencimiento" Type="varchar" MaxLength="50" />
+    <Property Name="PagCvvNo" Type="varchar" MaxLength="50" />
+    <Property Name="PagEmail" Type="varchar(max)" />
+    <Property Name="PagTipo" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="TPedido">
+    <Key>
+      <PropertyRef Name="PedDetalleId" />
+    </Key>
+    <Property Name="PedDetalleId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PedNumero" Type="int" />
+    <Property Name="PId" Type="int" Nullable="false" />
+    <Property Name="PedCantidad" Type="int" />
+    <Property Name="UId" Type="int" Nullable="false" />
+    <Property Name="PedEstado" Type="bit" />
+    <Property Name="PagId" Type="int" Nullable="false" />
+    <Property Name="PedFecha" Type="datetime" Nullable="false" />
+    <Property Name="PedCancelado" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TProducto">
+    <Key>
+      <PropertyRef Name="PId" />
+    </Key>
+    <Property Name="PId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PNombre" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="PDesctipcionCorta" Type="varchar" MaxLength="200" />
+    <Property Name="PDesctipcionLarga" Type="varchar(max)" />
+    <Property Name="PDescripcionAdicional" Type="varchar(max)" />
+    <Property Name="PPprecio" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="PCantidad" Type="int" Nullable="false" />
+    <Property Name="PTamanio" Type="varchar" MaxLength="200" />
+    <Property Name="PColor" Type="varchar" MaxLength="50" />
+    <Property Name="PCompaniaNombre" Type="varchar" MaxLength="100" />
+    <Property Name="CId" Type="int" Nullable="false" />
+    <Property Name="SCId" Type="int" Nullable="false" />
+    <Property Name="PVendido" Type="int" />
+    <Property Name="PPersonalizado" Type="bit" Nullable="false" />
+    <Property Name="PActivo" Type="bit" Nullable="false" />
+    <Property Name="PFCreacion" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TReseniaProducto">
+    <Key>
+      <PropertyRef Name="RPId" />
+    </Key>
+    <Property Name="RPId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="REstrellas" Type="int" Nullable="false" />
+    <Property Name="RComentarios" Type="varchar(max)" />
+    <Property Name="PId" Type="int" Nullable="false" />
+    <Property Name="UId" Type="int" Nullable="false" />
+    <Property Name="RPFCreacion" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TRoles">
+    <Key>
+      <PropertyRef Name="RId" />
+    </Key>
+    <Property Name="RId" Type="int" Nullable="false" />
+    <Property Name="RNombre" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TSubCategoria">
+    <Key>
+      <PropertyRef Name="SCId" />
+    </Key>
+    <Property Name="SCId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SCNombre" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="CId" Type="int" Nullable="false" />
+    <Property Name="SCEstado" Type="bit" Nullable="false" />
+    <Property Name="SCFCreacion" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TUsuario">
+    <Key>
+      <PropertyRef Name="UId" />
+    </Key>
+    <Property Name="UId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="50" />
+    <Property Name="UNombre" Type="varchar" MaxLength="50" />
+    <Property Name="UCelular" Type="varchar" MaxLength="50" />
+    <Property Name="UEmail" Type="varchar(max)" />
+    <Property Name="UDireccion" Type="varchar" MaxLength="50" />
+    <Property Name="UContrasenia" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="UImagenUrl" Type="varchar(max)" />
+    <Property Name="RId" Type="int" Nullable="false" />
+    <Property Name="UFCreacion" Type="datetime" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_TCarrito_TProducto">
+    <End Role="TProducto" Type="Self.TProducto" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="TCarrito" Type="Self.TCarrito" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TProducto">
+        <PropertyRef Name="PId" />
+      </Principal>
+      <Dependent Role="TCarrito">
+        <PropertyRef Name="PId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TCarrito_TUsuario">
+    <End Role="TUsuario" Type="Self.TUsuario" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="TCarrito" Type="Self.TCarrito" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TUsuario">
+        <PropertyRef Name="UId" />
+      </Principal>
+      <Dependent Role="TCarrito">
+        <PropertyRef Name="UId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TImagenProducto_TProducto">
+    <End Role="TProducto" Type="Self.TProducto" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="TImagenProducto" Type="Self.TImagenProducto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TProducto">
+        <PropertyRef Name="PId" />
+      </Principal>
+      <Dependent Role="TImagenProducto">
+        <PropertyRef Name="PId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TListaDeseos_TProducto">
+    <End Role="TProducto" Type="Self.TProducto" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="TListaDeseos" Type="Self.TListaDeseos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TProducto">
+        <PropertyRef Name="PId" />
+      </Principal>
+      <Dependent Role="TListaDeseos">
+        <PropertyRef Name="PId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TListaDeseos_TUsuario">
+    <End Role="TUsuario" Type="Self.TUsuario" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="TListaDeseos" Type="Self.TListaDeseos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TUsuario">
+        <PropertyRef Name="UId" />
+      </Principal>
+      <Dependent Role="TListaDeseos">
+        <PropertyRef Name="UId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TPedido_TPago">
+    <End Role="TPago" Type="Self.TPago" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="TPedido" Type="Self.TPedido" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TPago">
+        <PropertyRef Name="PagId" />
+      </Principal>
+      <Dependent Role="TPedido">
+        <PropertyRef Name="PagId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TPedido_TProducto">
+    <End Role="TProducto" Type="Self.TProducto" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="TPedido" Type="Self.TPedido" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TProducto">
+        <PropertyRef Name="PId" />
+      </Principal>
+      <Dependent Role="TPedido">
+        <PropertyRef Name="PId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TPedido_TUsuario">
+    <End Role="TUsuario" Type="Self.TUsuario" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="TPedido" Type="Self.TPedido" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TUsuario">
+        <PropertyRef Name="UId" />
+      </Principal>
+      <Dependent Role="TPedido">
+        <PropertyRef Name="UId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TProducto_TCategora">
+    <End Role="TCategoria" Type="Self.TCategoria" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="TProducto" Type="Self.TProducto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TCategoria">
+        <PropertyRef Name="CId" />
+      </Principal>
+      <Dependent Role="TProducto">
+        <PropertyRef Name="CId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TProducto_TSubCategoria">
+    <End Role="TSubCategoria" Type="Self.TSubCategoria" Multiplicity="1" />
+    <End Role="TProducto" Type="Self.TProducto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TSubCategoria">
+        <PropertyRef Name="SCId" />
+      </Principal>
+      <Dependent Role="TProducto">
+        <PropertyRef Name="SCId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TReseniaProducto_TProducto">
+    <End Role="TProducto" Type="Self.TProducto" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="TReseniaProducto" Type="Self.TReseniaProducto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TProducto">
+        <PropertyRef Name="PId" />
+      </Principal>
+      <Dependent Role="TReseniaProducto">
+        <PropertyRef Name="PId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TReseniaProducto_TUsuario">
+    <End Role="TUsuario" Type="Self.TUsuario" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="TReseniaProducto" Type="Self.TReseniaProducto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TUsuario">
+        <PropertyRef Name="UId" />
+      </Principal>
+      <Dependent Role="TReseniaProducto">
+        <PropertyRef Name="UId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TSubCategoria_TCategora">
+    <End Role="TCategoria" Type="Self.TCategoria" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="TSubCategoria" Type="Self.TSubCategoria" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TCategoria">
+        <PropertyRef Name="CId" />
+      </Principal>
+      <Dependent Role="TSubCategoria">
+        <PropertyRef Name="CId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TUsuario_TRoles">
+    <End Role="TRoles" Type="Self.TRoles" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="TUsuario" Type="Self.TUsuario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TRoles">
+        <PropertyRef Name="RId" />
+      </Principal>
+      <Dependent Role="TUsuario">
+        <PropertyRef Name="RId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="BDEComerceModelStoreContainer">
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TCarrito" EntityType="Self.TCarrito" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TCategoria" EntityType="Self.TCategoria" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TContacto" EntityType="Self.TContacto" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TImagenProducto" EntityType="Self.TImagenProducto" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TListaDeseos" EntityType="Self.TListaDeseos" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TPago" EntityType="Self.TPago" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TPedido" EntityType="Self.TPedido" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TProducto" EntityType="Self.TProducto" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TReseniaProducto" EntityType="Self.TReseniaProducto" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TRoles" EntityType="Self.TRoles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TSubCategoria" EntityType="Self.TSubCategoria" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TUsuario" EntityType="Self.TUsuario" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_TCarrito_TProducto" Association="Self.FK_TCarrito_TProducto">
+      <End Role="TProducto" EntitySet="TProducto" />
+      <End Role="TCarrito" EntitySet="TCarrito" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TCarrito_TUsuario" Association="Self.FK_TCarrito_TUsuario">
+      <End Role="TUsuario" EntitySet="TUsuario" />
+      <End Role="TCarrito" EntitySet="TCarrito" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TImagenProducto_TProducto" Association="Self.FK_TImagenProducto_TProducto">
+      <End Role="TProducto" EntitySet="TProducto" />
+      <End Role="TImagenProducto" EntitySet="TImagenProducto" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TListaDeseos_TProducto" Association="Self.FK_TListaDeseos_TProducto">
+      <End Role="TProducto" EntitySet="TProducto" />
+      <End Role="TListaDeseos" EntitySet="TListaDeseos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TListaDeseos_TUsuario" Association="Self.FK_TListaDeseos_TUsuario">
+      <End Role="TUsuario" EntitySet="TUsuario" />
+      <End Role="TListaDeseos" EntitySet="TListaDeseos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TPedido_TPago" Association="Self.FK_TPedido_TPago">
+      <End Role="TPago" EntitySet="TPago" />
+      <End Role="TPedido" EntitySet="TPedido" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TPedido_TProducto" Association="Self.FK_TPedido_TProducto">
+      <End Role="TProducto" EntitySet="TProducto" />
+      <End Role="TPedido" EntitySet="TPedido" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TPedido_TUsuario" Association="Self.FK_TPedido_TUsuario">
+      <End Role="TUsuario" EntitySet="TUsuario" />
+      <End Role="TPedido" EntitySet="TPedido" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TProducto_TCategora" Association="Self.FK_TProducto_TCategora">
+      <End Role="TCategoria" EntitySet="TCategoria" />
+      <End Role="TProducto" EntitySet="TProducto" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TProducto_TSubCategoria" Association="Self.FK_TProducto_TSubCategoria">
+      <End Role="TSubCategoria" EntitySet="TSubCategoria" />
+      <End Role="TProducto" EntitySet="TProducto" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TReseniaProducto_TProducto" Association="Self.FK_TReseniaProducto_TProducto">
+      <End Role="TProducto" EntitySet="TProducto" />
+      <End Role="TReseniaProducto" EntitySet="TReseniaProducto" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TReseniaProducto_TUsuario" Association="Self.FK_TReseniaProducto_TUsuario">
+      <End Role="TUsuario" EntitySet="TUsuario" />
+      <End Role="TReseniaProducto" EntitySet="TReseniaProducto" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TSubCategoria_TCategora" Association="Self.FK_TSubCategoria_TCategora">
+      <End Role="TCategoria" EntitySet="TCategoria" />
+      <End Role="TSubCategoria" EntitySet="TSubCategoria" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TUsuario_TRoles" Association="Self.FK_TUsuario_TRoles">
+      <End Role="TRoles" EntitySet="TRoles" />
+      <End Role="TUsuario" EntitySet="TUsuario" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

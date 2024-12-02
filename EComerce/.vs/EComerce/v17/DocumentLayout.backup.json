@@ -1,0 +1,142 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\ESTUDIOS\\Universidad Continental\\8vo ciclo\\CONSTRUCCI\u00D3N DE SOFTWARE\\E_COMERCE_ARTESANAL\\EComerce\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C0131591-8C1A-442F-BFAE-5D8C7EEF0956}|EComerce\\EComerce.csproj|d:\\estudios\\universidad continental\\8vo ciclo\\construcci\u00F3n de software\\e_comerce_artesanal\\ecomerce\\ecomerce\\admin\\producto.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0131591-8C1A-442F-BFAE-5D8C7EEF0956}|EComerce\\EComerce.csproj|solutionrelative:ecomerce\\admin\\producto.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0131591-8C1A-442F-BFAE-5D8C7EEF0956}|EComerce\\EComerce.csproj|d:\\estudios\\universidad continental\\8vo ciclo\\construcci\u00F3n de software\\e_comerce_artesanal\\ecomerce\\ecomerce\\admin\\producto.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{C0131591-8C1A-442F-BFAE-5D8C7EEF0956}|EComerce\\EComerce.csproj|solutionrelative:ecomerce\\admin\\producto.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0131591-8C1A-442F-BFAE-5D8C7EEF0956}|EComerce\\EComerce.csproj|d:\\estudios\\universidad continental\\8vo ciclo\\construcci\u00F3n de software\\e_comerce_artesanal\\ecomerce\\ecomerce\\utilidades.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0131591-8C1A-442F-BFAE-5D8C7EEF0956}|EComerce\\EComerce.csproj|solutionrelative:ecomerce\\utilidades.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0131591-8C1A-442F-BFAE-5D8C7EEF0956}|EComerce\\EComerce.csproj|d:\\estudios\\universidad continental\\8vo ciclo\\construcci\u00F3n de software\\e_comerce_artesanal\\ecomerce\\ecomerce\\admin\\categoria.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0131591-8C1A-442F-BFAE-5D8C7EEF0956}|EComerce\\EComerce.csproj|solutionrelative:ecomerce\\admin\\categoria.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0131591-8C1A-442F-BFAE-5D8C7EEF0956}|EComerce\\EComerce.csproj|d:\\estudios\\universidad continental\\8vo ciclo\\construcci\u00F3n de software\\e_comerce_artesanal\\ecomerce\\ecomerce\\bdecomerce.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "RelativeMoniker": "D:0:0:{C0131591-8C1A-442F-BFAE-5D8C7EEF0956}|EComerce\\EComerce.csproj|solutionrelative:ecomerce\\bdecomerce.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0131591-8C1A-442F-BFAE-5D8C7EEF0956}|EComerce\\EComerce.csproj|d:\\estudios\\universidad continental\\8vo ciclo\\construcci\u00F3n de software\\e_comerce_artesanal\\ecomerce\\ecomerce\\usuario\\tienda.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{C0131591-8C1A-442F-BFAE-5D8C7EEF0956}|EComerce\\EComerce.csproj|solutionrelative:ecomerce\\usuario\\tienda.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0131591-8C1A-442F-BFAE-5D8C7EEF0956}|EComerce\\EComerce.csproj|d:\\estudios\\universidad continental\\8vo ciclo\\construcci\u00F3n de software\\e_comerce_artesanal\\ecomerce\\ecomerce\\usuario\\tienda.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0131591-8C1A-442F-BFAE-5D8C7EEF0956}|EComerce\\EComerce.csproj|solutionrelative:ecomerce\\usuario\\tienda.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{6324226f-61b6-4f28-92ee-18d4b5fe1e48}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Producto.aspx.cs",
+              "DocumentMoniker": "D:\\ESTUDIOS\\Universidad Continental\\8vo ciclo\\CONSTRUCCI\u00D3N DE SOFTWARE\\E_COMERCE_ARTESANAL\\EComerce\\EComerce\\Admin\\Producto.aspx.cs",
+              "RelativeDocumentMoniker": "EComerce\\Admin\\Producto.aspx.cs",
+              "ToolTip": "D:\\ESTUDIOS\\Universidad Continental\\8vo ciclo\\CONSTRUCCI\u00D3N DE SOFTWARE\\E_COMERCE_ARTESANAL\\EComerce\\EComerce\\Admin\\Producto.aspx.cs",
+              "RelativeToolTip": "EComerce\\Admin\\Producto.aspx.cs",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAowG0AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T07:00:26.707Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BDEComerce.edmx [Diagram1]",
+              "DocumentMoniker": "D:\\ESTUDIOS\\Universidad Continental\\8vo ciclo\\CONSTRUCCI\u00D3N DE SOFTWARE\\E_COMERCE_ARTESANAL\\EComerce\\EComerce\\BDEComerce.edmx",
+              "RelativeDocumentMoniker": "EComerce\\BDEComerce.edmx",
+              "ToolTip": "D:\\ESTUDIOS\\Universidad Continental\\8vo ciclo\\CONSTRUCCI\u00D3N DE SOFTWARE\\E_COMERCE_ARTESANAL\\EComerce\\EComerce\\BDEComerce.edmx [Diagram1]",
+              "RelativeToolTip": "EComerce\\BDEComerce.edmx [Diagram1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
+              "WhenOpened": "2024-12-02T15:49:37.898Z",
+              "EditorCaption": " [Diagram1]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Tienda.aspx.cs",
+              "DocumentMoniker": "D:\\ESTUDIOS\\Universidad Continental\\8vo ciclo\\CONSTRUCCI\u00D3N DE SOFTWARE\\E_COMERCE_ARTESANAL\\EComerce\\EComerce\\Usuario\\Tienda.aspx.cs",
+              "RelativeDocumentMoniker": "EComerce\\Usuario\\Tienda.aspx.cs",
+              "ToolTip": "D:\\ESTUDIOS\\Universidad Continental\\8vo ciclo\\CONSTRUCCI\u00D3N DE SOFTWARE\\E_COMERCE_ARTESANAL\\EComerce\\EComerce\\Usuario\\Tienda.aspx.cs",
+              "RelativeToolTip": "EComerce\\Usuario\\Tienda.aspx.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAmwCIAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T14:50:59.208Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Tienda.aspx",
+              "DocumentMoniker": "D:\\ESTUDIOS\\Universidad Continental\\8vo ciclo\\CONSTRUCCI\u00D3N DE SOFTWARE\\E_COMERCE_ARTESANAL\\EComerce\\EComerce\\Usuario\\Tienda.aspx",
+              "RelativeDocumentMoniker": "EComerce\\Usuario\\Tienda.aspx",
+              "ToolTip": "D:\\ESTUDIOS\\Universidad Continental\\8vo ciclo\\CONSTRUCCI\u00D3N DE SOFTWARE\\E_COMERCE_ARTESANAL\\EComerce\\EComerce\\Usuario\\Tienda.aspx",
+              "RelativeToolTip": "EComerce\\Usuario\\Tienda.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-12-02T14:46:27.997Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Utilidades.cs",
+              "DocumentMoniker": "D:\\ESTUDIOS\\Universidad Continental\\8vo ciclo\\CONSTRUCCI\u00D3N DE SOFTWARE\\E_COMERCE_ARTESANAL\\EComerce\\EComerce\\Utilidades.cs",
+              "RelativeDocumentMoniker": "EComerce\\Utilidades.cs",
+              "ToolTip": "D:\\ESTUDIOS\\Universidad Continental\\8vo ciclo\\CONSTRUCCI\u00D3N DE SOFTWARE\\E_COMERCE_ARTESANAL\\EComerce\\EComerce\\Utilidades.cs",
+              "RelativeToolTip": "EComerce\\Utilidades.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAswDAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T07:17:17.264Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Producto.aspx",
+              "DocumentMoniker": "D:\\ESTUDIOS\\Universidad Continental\\8vo ciclo\\CONSTRUCCI\u00D3N DE SOFTWARE\\E_COMERCE_ARTESANAL\\EComerce\\EComerce\\Admin\\Producto.aspx",
+              "RelativeDocumentMoniker": "EComerce\\Admin\\Producto.aspx",
+              "ToolTip": "D:\\ESTUDIOS\\Universidad Continental\\8vo ciclo\\CONSTRUCCI\u00D3N DE SOFTWARE\\E_COMERCE_ARTESANAL\\EComerce\\EComerce\\Admin\\Producto.aspx",
+              "RelativeToolTip": "EComerce\\Admin\\Producto.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-12-02T06:46:59.438Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Categoria.aspx.cs",
+              "DocumentMoniker": "D:\\ESTUDIOS\\Universidad Continental\\8vo ciclo\\CONSTRUCCI\u00D3N DE SOFTWARE\\E_COMERCE_ARTESANAL\\EComerce\\EComerce\\Admin\\Categoria.aspx.cs",
+              "RelativeDocumentMoniker": "EComerce\\Admin\\Categoria.aspx.cs",
+              "ToolTip": "D:\\ESTUDIOS\\Universidad Continental\\8vo ciclo\\CONSTRUCCI\u00D3N DE SOFTWARE\\E_COMERCE_ARTESANAL\\EComerce\\EComerce\\Admin\\Categoria.aspx.cs",
+              "RelativeToolTip": "EComerce\\Admin\\Categoria.aspx.cs",
+              "ViewState": "AgIAAI8AAAAAAAAAAAAowKoAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T18:30:19.533Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
