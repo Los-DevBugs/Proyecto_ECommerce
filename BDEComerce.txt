@@ -1,0 +1,171 @@
+use master
+
+IF EXISTS(SELECT * FROM SYS.DATABASES WHERE NAME='BDEComerce')
+	DROP DATABASE BDEComerce;
+GO
+
+create database BDEComerce
+go
+
+use BDEComerce
+go
+
+
+
+-- Tabla Tcategoria
+CREATE TABLE TCategoria (
+    CId INT PRIMARY KEY IDENTITY(1,1),
+    CNombre VARCHAR(100) NOT NULL,
+    CImagen VARCHAR(MAX) NOT NULL,
+    CEstado BIT NOT NULL,
+    CFCreacion DATETIME NOT NULL
+);
+
+-- Tabla TSubCategoria
+CREATE TABLE TSubCategoria (
+    SCId INT PRIMARY KEY IDENTITY(1,1),
+    SCNombre VARCHAR(100) NOT NULL,
+    CId INT NOT NULL,
+    SCEstado BIT NOT NULL,
+    SCFCreacion DATETIME NOT NULL,
+    CONSTRAINT FK_TSubCategoria_TCategora FOREIGN KEY (CId) 
+        REFERENCES TCategoria (CId) ON DELETE CASCADE
+);
+
+-- Tabla TProducto
+CREATE TABLE TProducto (
+    PId INT PRIMARY KEY IDENTITY(1,1),
+    PNombre VARCHAR(100) NOT NULL,
+    PDesctipcionCorta VARCHAR(200) NULL,
+    PDesctipcionLarga VARCHAR(MAX) NULL,
+    PDescripcionAdicional VARCHAR(MAX) NULL,
+    PPprecio DECIMAL(18,2) NOT NULL,
+    PCantidad INT NOT NULL,
+    PTamanio VARCHAR(200) NULL,
+    PColor VARCHAR(50) NULL,
+    PCompaniaNombre VARCHAR(100) NULL,
+    CId INT NOT NULL,
+    SCId INT NOT NULL,
+    PVendido INT NULL,
+    PPersonalizado BIT NOT NULL,
+    PActivo BIT NOT NULL,
+    PFCreacion DATETIME NOT NULL,
+    CONSTRAINT FK_TProducto_TCategora FOREIGN KEY (CId) 
+        REFERENCES TCategoria (CId) ON DELETE CASCADE,
+    CONSTRAINT FK_TProducto_TSubCategoria FOREIGN KEY (SCId) 
+        REFERENCES TSubCategoria (SCId)
+);
+
+-- Tabla TImagenProducto
+CREATE TABLE TImagenProducto (
+    IPId INT PRIMARY KEY IDENTITY(1,1),
+    IPUrl VARCHAR(MAX) NULL,
+    PId INT NOT NULL,
+    IPPredeterminado BIT NULL,
+    CONSTRAINT FK_TImagenProducto_TProducto FOREIGN KEY (PId) 
+        REFERENCES TProducto (PId) ON DELETE CASCADE
+);
+
+-- Tabla TRoles
+CREATE TABLE TRoles (
+    RId INT PRIMARY KEY,
+    RNombre VARCHAR(50) NOT NULL
+);
+
+INSERT INTO TRoles VALUES(1,'Admin')
+INSERT INTO TRoles VALUES(2,'Customer')
+
+-- Tabla TUsuario
+CREATE TABLE TUsuario (
+    UId INT PRIMARY KEY IDENTITY(1,1),
+    Nombre VARCHAR(50) NULL,
+    UNombre VARCHAR(50) UNIQUE NULL,
+    UCelular VARCHAR(50) NULL,
+    UEmail VARCHAR(MAX) NULL,
+    UDireccion VARCHAR(50) NULL,
+    UContrasenia VARCHAR(50) NOT NULL,
+    UImagenUrl VARCHAR(MAX) NULL ,
+    RId INT NOT NULL,
+    UFCreacion DATETIME NOT NULL,
+    CONSTRAINT FK_TUsuario_TRoles FOREIGN KEY (RId) 
+        REFERENCES TRoles (RId) ON DELETE CASCADE
+);
+
+-- Tabla TReseniaProducto
+CREATE TABLE TReseniaProducto (
+    RPId INT PRIMARY KEY IDENTITY(1,1),
+    REstrellas INT NOT NULL,
+    RComentarios VARCHAR(MAX) NULL,
+    PId INT NOT NULL,
+    UId INT NOT NULL,
+    RPFCreacion DATETIME NOT NULL,
+    CONSTRAINT FK_TReseniaProducto_TProducto FOREIGN KEY (PId) 
+        REFERENCES TProducto (PId) ON DELETE CASCADE,
+    CONSTRAINT FK_TReseniaProducto_TUsuario FOREIGN KEY (UId) 
+        REFERENCES TUsuario (UId) ON DELETE CASCADE
+);
+
+-- Tabla TListaDeseos
+CREATE TABLE TListaDeseos (
+    LDId INT PRIMARY KEY IDENTITY(1,1),
+    PId INT NOT NULL,
+    UId INT NOT NULL,
+    LDFCreacion DATETIME NOT NULL,
+    CONSTRAINT FK_TListaDeseos_TProducto FOREIGN KEY (PId) 
+        REFERENCES TProducto (PId) ON DELETE CASCADE,
+    CONSTRAINT FK_TListaDeseos_TUsuario FOREIGN KEY (UId) 
+        REFERENCES TUsuario (UId) ON DELETE CASCADE
+);
+
+-- Tabla TCarrito
+CREATE TABLE TCarrito (
+    CarId INT PRIMARY KEY IDENTITY(1,1),
+    PId INT NOT NULL,
+    CarCantidad INT NULL,
+    UId INT NOT NULL,
+    CarFCreacion DATETIME NOT NULL,
+    CONSTRAINT FK_TCarrito_TProducto FOREIGN KEY (PId) 
+        REFERENCES TProducto (PId) ON DELETE CASCADE,
+    CONSTRAINT FK_TCarrito_TUsuario FOREIGN KEY (UId) 
+        REFERENCES TUsuario (UId) ON DELETE CASCADE
+);
+
+-- Tabla TContacto
+CREATE TABLE TContacto (
+    CtId INT PRIMARY KEY IDENTITY(1,1),
+    CtNombre VARCHAR(50) NOT NULL,
+    CtEmail VARCHAR(50) NULL,
+    CtAsunto VARCHAR(200) NULL,
+    CtMensaje VARCHAR(MAX) NULL,
+    CtFCreacion DATETIME NOT NULL
+);
+
+-- Tabla TPago
+CREATE TABLE TPago (
+    PagId INT PRIMARY KEY IDENTITY(1,1),
+    PagNombre VARCHAR(50) NULL,
+    PagNoTarjeta VARCHAR(50) NULL,
+    PagFvencimiento VARCHAR(50) NULL,
+    PagCvvNo VARCHAR(50) NULL,
+    PagEmail VARCHAR(MAX) NULL,
+    PagTipo VARCHAR(50) NULL
+);
+
+-- Tabla TPedido
+CREATE TABLE TPedido (
+    PedDetalleId INT PRIMARY KEY IDENTITY(1,1),
+    PedNumero INT NULL,
+    PId INT NOT NULL,
+    PedCantidad INT NULL,
+    UId INT NOT NULL,
+    PedEstado BIT NULL,
+    PagId INT NOT NULL,
+    PedFecha DATETIME NOT NULL,
+	PedCancelado BIT NOT NULL DEFAULT 0
+    CONSTRAINT FK_TPedido_TProducto FOREIGN KEY (PId) 
+        REFERENCES TProducto (PId) ON DELETE CASCADE,
+    CONSTRAINT FK_TPedido_TUsuario FOREIGN KEY (UId) 
+        REFERENCES TUsuario (UId) ON DELETE CASCADE,
+    CONSTRAINT FK_TPedido_TPago FOREIGN KEY (PagId) 
+        REFERENCES TPago (PagId) ON DELETE CASCADE
+);

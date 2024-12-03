@@ -1,0 +1,126 @@
+D:\DESCARGAS\EComerce\PAGO\obj\Debug\PAGO.csproj.AssemblyReference.cache
+D:\DESCARGAS\EComerce\PAGO\obj\Debug\PAGO.csproj.CoreCompileInputs.cache
+D:\DESCARGAS\EComerce\PAGO\bin\PAGO.dll.config
+D:\DESCARGAS\EComerce\PAGO\bin\PAGO.dll
+D:\DESCARGAS\EComerce\PAGO\bin\PAGO.pdb
+D:\DESCARGAS\EComerce\PAGO\bin\roslyn\csc.exe
+D:\DESCARGAS\EComerce\PAGO\bin\roslyn\csc.exe.config
+D:\DESCARGAS\EComerce\PAGO\bin\roslyn\csc.rsp
+D:\DESCARGAS\EComerce\PAGO\bin\roslyn\csi.exe
+D:\DESCARGAS\EComerce\PAGO\bin\roslyn\csi.exe.config
+D:\DESCARGAS\EComerce\PAGO\bin\roslyn\csi.rsp
+D:\DESCARGAS\EComerce\PAGO\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\DESCARGAS\EComerce\PAGO\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\DESCARGAS\EComerce\PAGO\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\DESCARGAS\EComerce\PAGO\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\DESCARGAS\EComerce\PAGO\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\DESCARGAS\EComerce\PAGO\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\DESCARGAS\EComerce\PAGO\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\DESCARGAS\EComerce\PAGO\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\DESCARGAS\EComerce\PAGO\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\DESCARGAS\EComerce\PAGO\bin\roslyn\Microsoft.Managed.Core.targets
+D:\DESCARGAS\EComerce\PAGO\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\DESCARGAS\EComerce\PAGO\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\DESCARGAS\EComerce\PAGO\bin\roslyn\System.AppContext.dll
+D:\DESCARGAS\EComerce\PAGO\bin\roslyn\System.Collections.Immutable.dll
+D:\DESCARGAS\EComerce\PAGO\bin\roslyn\System.Console.dll
+D:\DESCARGAS\EComerce\PAGO\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\DESCARGAS\EComerce\PAGO\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\DESCARGAS\EComerce\PAGO\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\DESCARGAS\EComerce\PAGO\bin\roslyn\System.Globalization.Calendars.dll
+D:\DESCARGAS\EComerce\PAGO\bin\roslyn\System.IO.Compression.dll
+D:\DESCARGAS\EComerce\PAGO\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\DESCARGAS\EComerce\PAGO\bin\roslyn\System.IO.FileSystem.dll
+D:\DESCARGAS\EComerce\PAGO\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\DESCARGAS\EComerce\PAGO\bin\roslyn\System.Net.Http.dll
+D:\DESCARGAS\EComerce\PAGO\bin\roslyn\System.Net.Sockets.dll
+D:\DESCARGAS\EComerce\PAGO\bin\roslyn\System.Reflection.Metadata.dll
+D:\DESCARGAS\EComerce\PAGO\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\DESCARGAS\EComerce\PAGO\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\DESCARGAS\EComerce\PAGO\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\DESCARGAS\EComerce\PAGO\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\DESCARGAS\EComerce\PAGO\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\DESCARGAS\EComerce\PAGO\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\DESCARGAS\EComerce\PAGO\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\DESCARGAS\EComerce\PAGO\bin\roslyn\System.ValueTuple.dll
+D:\DESCARGAS\EComerce\PAGO\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\DESCARGAS\EComerce\PAGO\bin\roslyn\System.Xml.XmlDocument.dll
+D:\DESCARGAS\EComerce\PAGO\bin\roslyn\System.Xml.XPath.dll
+D:\DESCARGAS\EComerce\PAGO\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\DESCARGAS\EComerce\PAGO\bin\roslyn\vbc.exe
+D:\DESCARGAS\EComerce\PAGO\bin\roslyn\vbc.exe.config
+D:\DESCARGAS\EComerce\PAGO\bin\roslyn\vbc.rsp
+D:\DESCARGAS\EComerce\PAGO\bin\roslyn\VBCSCompiler.exe
+D:\DESCARGAS\EComerce\PAGO\bin\roslyn\VBCSCompiler.exe.config
+D:\DESCARGAS\EComerce\PAGO\bin\EntityFramework.dll
+D:\DESCARGAS\EComerce\PAGO\bin\EntityFramework.SqlServer.dll
+D:\DESCARGAS\EComerce\PAGO\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\DESCARGAS\EComerce\PAGO\bin\EntityFramework.xml
+D:\DESCARGAS\EComerce\PAGO\bin\EntityFramework.SqlServer.xml
+D:\DESCARGAS\EComerce\PAGO\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\DESCARGAS\EComerce\PAGO\obj\Debug\PAGO.csproj.Up2Date
+D:\DESCARGAS\EComerce\PAGO\obj\Debug\PAGO.dll
+D:\DESCARGAS\EComerce\PAGO\obj\Debug\PAGO.pdb
+D:\ESTUDIOS\Universidad Continental\8vo ciclo\CONSTRUCCIÓN DE SOFTWARE\katiliz\EComerce\EComerce\PAGO\bin\PAGO.dll.config
+D:\ESTUDIOS\Universidad Continental\8vo ciclo\CONSTRUCCIÓN DE SOFTWARE\katiliz\EComerce\EComerce\PAGO\bin\PAGO.dll
+D:\ESTUDIOS\Universidad Continental\8vo ciclo\CONSTRUCCIÓN DE SOFTWARE\katiliz\EComerce\EComerce\PAGO\bin\PAGO.pdb
+D:\ESTUDIOS\Universidad Continental\8vo ciclo\CONSTRUCCIÓN DE SOFTWARE\katiliz\EComerce\EComerce\PAGO\bin\roslyn\csc.exe
+D:\ESTUDIOS\Universidad Continental\8vo ciclo\CONSTRUCCIÓN DE SOFTWARE\katiliz\EComerce\EComerce\PAGO\bin\roslyn\csc.exe.config
+D:\ESTUDIOS\Universidad Continental\8vo ciclo\CONSTRUCCIÓN DE SOFTWARE\katiliz\EComerce\EComerce\PAGO\bin\roslyn\csc.rsp
+D:\ESTUDIOS\Universidad Continental\8vo ciclo\CONSTRUCCIÓN DE SOFTWARE\katiliz\EComerce\EComerce\PAGO\bin\roslyn\csi.exe
+D:\ESTUDIOS\Universidad Continental\8vo ciclo\CONSTRUCCIÓN DE SOFTWARE\katiliz\EComerce\EComerce\PAGO\bin\roslyn\csi.exe.config
+D:\ESTUDIOS\Universidad Continental\8vo ciclo\CONSTRUCCIÓN DE SOFTWARE\katiliz\EComerce\EComerce\PAGO\bin\roslyn\csi.rsp
+D:\ESTUDIOS\Universidad Continental\8vo ciclo\CONSTRUCCIÓN DE SOFTWARE\katiliz\EComerce\EComerce\PAGO\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\ESTUDIOS\Universidad Continental\8vo ciclo\CONSTRUCCIÓN DE SOFTWARE\katiliz\EComerce\EComerce\PAGO\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\ESTUDIOS\Universidad Continental\8vo ciclo\CONSTRUCCIÓN DE SOFTWARE\katiliz\EComerce\EComerce\PAGO\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\ESTUDIOS\Universidad Continental\8vo ciclo\CONSTRUCCIÓN DE SOFTWARE\katiliz\EComerce\EComerce\PAGO\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\ESTUDIOS\Universidad Continental\8vo ciclo\CONSTRUCCIÓN DE SOFTWARE\katiliz\EComerce\EComerce\PAGO\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\ESTUDIOS\Universidad Continental\8vo ciclo\CONSTRUCCIÓN DE SOFTWARE\katiliz\EComerce\EComerce\PAGO\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\ESTUDIOS\Universidad Continental\8vo ciclo\CONSTRUCCIÓN DE SOFTWARE\katiliz\EComerce\EComerce\PAGO\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\ESTUDIOS\Universidad Continental\8vo ciclo\CONSTRUCCIÓN DE SOFTWARE\katiliz\EComerce\EComerce\PAGO\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\ESTUDIOS\Universidad Continental\8vo ciclo\CONSTRUCCIÓN DE SOFTWARE\katiliz\EComerce\EComerce\PAGO\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\ESTUDIOS\Universidad Continental\8vo ciclo\CONSTRUCCIÓN DE SOFTWARE\katiliz\EComerce\EComerce\PAGO\bin\roslyn\Microsoft.Managed.Core.targets
+D:\ESTUDIOS\Universidad Continental\8vo ciclo\CONSTRUCCIÓN DE SOFTWARE\katiliz\EComerce\EComerce\PAGO\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\ESTUDIOS\Universidad Continental\8vo ciclo\CONSTRUCCIÓN DE SOFTWARE\katiliz\EComerce\EComerce\PAGO\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\ESTUDIOS\Universidad Continental\8vo ciclo\CONSTRUCCIÓN DE SOFTWARE\katiliz\EComerce\EComerce\PAGO\bin\roslyn\System.AppContext.dll
+D:\ESTUDIOS\Universidad Continental\8vo ciclo\CONSTRUCCIÓN DE SOFTWARE\katiliz\EComerce\EComerce\PAGO\bin\roslyn\System.Collections.Immutable.dll
+D:\ESTUDIOS\Universidad Continental\8vo ciclo\CONSTRUCCIÓN DE SOFTWARE\katiliz\EComerce\EComerce\PAGO\bin\roslyn\System.Console.dll
+D:\ESTUDIOS\Universidad Continental\8vo ciclo\CONSTRUCCIÓN DE SOFTWARE\katiliz\EComerce\EComerce\PAGO\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\ESTUDIOS\Universidad Continental\8vo ciclo\CONSTRUCCIÓN DE SOFTWARE\katiliz\EComerce\EComerce\PAGO\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\ESTUDIOS\Universidad Continental\8vo ciclo\CONSTRUCCIÓN DE SOFTWARE\katiliz\EComerce\EComerce\PAGO\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\ESTUDIOS\Universidad Continental\8vo ciclo\CONSTRUCCIÓN DE SOFTWARE\katiliz\EComerce\EComerce\PAGO\bin\roslyn\System.Globalization.Calendars.dll
+D:\ESTUDIOS\Universidad Continental\8vo ciclo\CONSTRUCCIÓN DE SOFTWARE\katiliz\EComerce\EComerce\PAGO\bin\roslyn\System.IO.Compression.dll
+D:\ESTUDIOS\Universidad Continental\8vo ciclo\CONSTRUCCIÓN DE SOFTWARE\katiliz\EComerce\EComerce\PAGO\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\ESTUDIOS\Universidad Continental\8vo ciclo\CONSTRUCCIÓN DE SOFTWARE\katiliz\EComerce\EComerce\PAGO\bin\roslyn\System.IO.FileSystem.dll
+D:\ESTUDIOS\Universidad Continental\8vo ciclo\CONSTRUCCIÓN DE SOFTWARE\katiliz\EComerce\EComerce\PAGO\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\ESTUDIOS\Universidad Continental\8vo ciclo\CONSTRUCCIÓN DE SOFTWARE\katiliz\EComerce\EComerce\PAGO\bin\roslyn\System.Net.Http.dll
+D:\ESTUDIOS\Universidad Continental\8vo ciclo\CONSTRUCCIÓN DE SOFTWARE\katiliz\EComerce\EComerce\PAGO\bin\roslyn\System.Net.Sockets.dll
+D:\ESTUDIOS\Universidad Continental\8vo ciclo\CONSTRUCCIÓN DE SOFTWARE\katiliz\EComerce\EComerce\PAGO\bin\roslyn\System.Reflection.Metadata.dll
+D:\ESTUDIOS\Universidad Continental\8vo ciclo\CONSTRUCCIÓN DE SOFTWARE\katiliz\EComerce\EComerce\PAGO\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\ESTUDIOS\Universidad Continental\8vo ciclo\CONSTRUCCIÓN DE SOFTWARE\katiliz\EComerce\EComerce\PAGO\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\ESTUDIOS\Universidad Continental\8vo ciclo\CONSTRUCCIÓN DE SOFTWARE\katiliz\EComerce\EComerce\PAGO\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\ESTUDIOS\Universidad Continental\8vo ciclo\CONSTRUCCIÓN DE SOFTWARE\katiliz\EComerce\EComerce\PAGO\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\ESTUDIOS\Universidad Continental\8vo ciclo\CONSTRUCCIÓN DE SOFTWARE\katiliz\EComerce\EComerce\PAGO\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\ESTUDIOS\Universidad Continental\8vo ciclo\CONSTRUCCIÓN DE SOFTWARE\katiliz\EComerce\EComerce\PAGO\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\ESTUDIOS\Universidad Continental\8vo ciclo\CONSTRUCCIÓN DE SOFTWARE\katiliz\EComerce\EComerce\PAGO\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\ESTUDIOS\Universidad Continental\8vo ciclo\CONSTRUCCIÓN DE SOFTWARE\katiliz\EComerce\EComerce\PAGO\bin\roslyn\System.ValueTuple.dll
+D:\ESTUDIOS\Universidad Continental\8vo ciclo\CONSTRUCCIÓN DE SOFTWARE\katiliz\EComerce\EComerce\PAGO\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\ESTUDIOS\Universidad Continental\8vo ciclo\CONSTRUCCIÓN DE SOFTWARE\katiliz\EComerce\EComerce\PAGO\bin\roslyn\System.Xml.XmlDocument.dll
+D:\ESTUDIOS\Universidad Continental\8vo ciclo\CONSTRUCCIÓN DE SOFTWARE\katiliz\EComerce\EComerce\PAGO\bin\roslyn\System.Xml.XPath.dll
+D:\ESTUDIOS\Universidad Continental\8vo ciclo\CONSTRUCCIÓN DE SOFTWARE\katiliz\EComerce\EComerce\PAGO\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\ESTUDIOS\Universidad Continental\8vo ciclo\CONSTRUCCIÓN DE SOFTWARE\katiliz\EComerce\EComerce\PAGO\bin\roslyn\vbc.exe
+D:\ESTUDIOS\Universidad Continental\8vo ciclo\CONSTRUCCIÓN DE SOFTWARE\katiliz\EComerce\EComerce\PAGO\bin\roslyn\vbc.exe.config
+D:\ESTUDIOS\Universidad Continental\8vo ciclo\CONSTRUCCIÓN DE SOFTWARE\katiliz\EComerce\EComerce\PAGO\bin\roslyn\vbc.rsp
+D:\ESTUDIOS\Universidad Continental\8vo ciclo\CONSTRUCCIÓN DE SOFTWARE\katiliz\EComerce\EComerce\PAGO\bin\roslyn\VBCSCompiler.exe
+D:\ESTUDIOS\Universidad Continental\8vo ciclo\CONSTRUCCIÓN DE SOFTWARE\katiliz\EComerce\EComerce\PAGO\bin\roslyn\VBCSCompiler.exe.config
+D:\ESTUDIOS\Universidad Continental\8vo ciclo\CONSTRUCCIÓN DE SOFTWARE\katiliz\EComerce\EComerce\PAGO\bin\EntityFramework.dll
+D:\ESTUDIOS\Universidad Continental\8vo ciclo\CONSTRUCCIÓN DE SOFTWARE\katiliz\EComerce\EComerce\PAGO\bin\EntityFramework.SqlServer.dll
+D:\ESTUDIOS\Universidad Continental\8vo ciclo\CONSTRUCCIÓN DE SOFTWARE\katiliz\EComerce\EComerce\PAGO\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\ESTUDIOS\Universidad Continental\8vo ciclo\CONSTRUCCIÓN DE SOFTWARE\katiliz\EComerce\EComerce\PAGO\bin\EntityFramework.xml
+D:\ESTUDIOS\Universidad Continental\8vo ciclo\CONSTRUCCIÓN DE SOFTWARE\katiliz\EComerce\EComerce\PAGO\bin\EntityFramework.SqlServer.xml
+D:\ESTUDIOS\Universidad Continental\8vo ciclo\CONSTRUCCIÓN DE SOFTWARE\katiliz\EComerce\EComerce\PAGO\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\ESTUDIOS\Universidad Continental\8vo ciclo\CONSTRUCCIÓN DE SOFTWARE\katiliz\EComerce\EComerce\PAGO\obj\Debug\PAGO.csproj.AssemblyReference.cache
+D:\ESTUDIOS\Universidad Continental\8vo ciclo\CONSTRUCCIÓN DE SOFTWARE\katiliz\EComerce\EComerce\PAGO\obj\Debug\PAGO.csproj.CoreCompileInputs.cache
+D:\ESTUDIOS\Universidad Continental\8vo ciclo\CONSTRUCCIÓN DE SOFTWARE\katiliz\EComerce\EComerce\PAGO\obj\Debug\PAGO.csproj.Up2Date
+D:\ESTUDIOS\Universidad Continental\8vo ciclo\CONSTRUCCIÓN DE SOFTWARE\katiliz\EComerce\EComerce\PAGO\obj\Debug\PAGO.dll
+D:\ESTUDIOS\Universidad Continental\8vo ciclo\CONSTRUCCIÓN DE SOFTWARE\katiliz\EComerce\EComerce\PAGO\obj\Debug\PAGO.pdb

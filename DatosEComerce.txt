@@ -1,0 +1,41 @@
+select * from TCategoria
+
+select * from TProducto
+
+select * from TImagenProducto
+
+INSERT INTO TProducto 
+(PNombre, PDesctipcionCorta, PDesctipcionLarga, PPprecio, PCantidad, CId, SCId, PActivo, PFCreacion, PPersonalizado)
+VALUES
+-- Productos de la categoría Chompas
+('Chompa Alpaca Natural', 'Chompa de lana de alpaca.', 'Chompa artesanal hecha 100% de lana de alpaca, ideal para el invierno.', 120.50, 50, 1, 1, 1, GETDATE(), 0),
+('Chompa Lana Oveja', 'Chompa cálida.', 'Chompa tejida a mano con lana de oveja, cómoda y resistente.', 90.00, 40, 1, 1, 1, GETDATE(), 0),
+('Chompa Andina', 'Chompa con diseño andino.', 'Diseño andino con patrones tradicionales y colores vibrantes.', 150.75, 30, 1, 1, 1, GETDATE(), 0),
+
+-- Productos de la categoría Textiles
+('Manta Andina', 'Manta artesanal.', 'Manta hecha a mano con colores vibrantes, ideal para decorar y abrigar.', 75.00, 20, 6, 2, 1, GETDATE(), 0),
+('Camino de Mesa', 'Camino bordado.', 'Camino de mesa artesanal con bordados únicos y tradicionales.', 50.00, 25, 6, 2, 1, GETDATE(), 0),
+('Poncho de Alpaca', 'Poncho cálido.', 'Poncho artesanal hecho con fibras naturales de alpaca.', 180.00, 15, 6, 2, 1, GETDATE(), 0),
+
+-- Productos de la categoría Cerámica
+('Jarrón Decorativo', 'Jarrón pintado a mano.', 'Jarrón de cerámica decorado con diseños exclusivos.', 65.00, 10, 7, 3, 1, GETDATE(), 0),
+('Taza de Cerámica', 'Taza artesanal.', 'Taza hecha a mano, ideal para bebidas calientes.', 25.00, 50, 7, 3, 1, GETDATE(), 0),
+('Plato Andino', 'Plato decorativo.', 'Plato con patrones culturales inspirados en el arte andino.', 40.00, 35, 7, 3, 1, GETDATE(), 0);
+
+
+INSERT INTO TSubCategoria (SCNombre, CId, SCEstado, SCFCreacion)
+VALUES
+-- Subcategorías para Chompas
+('Chompas de Alpaca', 1, 1, GETDATE()),
+('Chompas de Lana', 1, 1, GETDATE()),
+('Chompas Andinas', 1, 1, GETDATE()),
+
+-- Subcategorías para Textiles
+('Mantelería', 6, 1, GETDATE()),
+('Ropa de Invierno', 6, 1, GETDATE()),
+('Decoración Textil', 6, 1, GETDATE()),
+
+-- Subcategorías para Cerámica
+('Utensilios de Cocina', 7, 1, GETDATE()),
+('Decoración de Interiores', 7, 1, GETDATE()),
+('Cerámica Precolombina', 7, 1, GETDATE());
